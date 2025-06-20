@@ -1,0 +1,1 @@
+function cadastrar(e){e.preventDefault();let n=document.getElementById('nome').value,eL=document.getElementById('email').value;fetch('API_URL',{method:'POST',body:JSON.stringify({tipo:'cadastro',nome:n,email:eL}),headers:{'Content-Type':'application/json'}}).then(r=>r.text()).then(a=>alert(a));}

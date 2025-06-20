@@ -1,0 +1,1 @@
+if(sessionStorage.getItem('autenticado')!=='sim'){window.location='index.html'} function logout(){sessionStorage.clear();window.location='index.html'}
